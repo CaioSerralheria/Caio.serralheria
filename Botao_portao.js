@@ -52,7 +52,7 @@ function cria_img(lista, pasta, div) {
     
     	    divs.appendChild(img)
     
-    	    img.src="https://marciobob.github.io/serralheria/Img/"+pasta+"/"+pasta+index+".jpg"
+    	    img.src="https://CaioSerralheri.github.io/Caio.Serralheri/Img/"+pasta+"/"+pasta+index+".jpg"
     
     	    img.classList.add("img_servico")
     	    img.loading="lazy"
