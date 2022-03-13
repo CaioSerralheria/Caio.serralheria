@@ -1,16 +1,28 @@
 * {
   margin: 0;
   padding: 0;
+
 }
-@media (min-width: 700px) {
+@media (min-width: 1200px) {
+
+  body{
+    position: sticky;
+
+  }
+
+  .bory{
+    background-color: black;
+  }
+
   main{
-    width: 40%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+
   }
 
   footer{
-    width: 40%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -18,35 +30,70 @@
   
   .cabecalho {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation: backInLeft;
-    animation-duration: 1s;
+    flex-direction: row;
     background-color: rgb(0, 0, 0);
     border: none;
-    padding-bottom: 20px;
+    padding-left: 60px;
+    justify-content: center;
 
   }
 
   .img_logo {
-    margin-top: 1rem;
-    width: 84px;
-    height: 84px;
+    margin-top: 80px;
+    width: 200px;
+    height: 200px;
     border-radius: 20px;
     box-shadow:2px 2px 12px 2px #e28743;
-    margin-bottom:8px
-  }
-  .txt_logo {
-    color: #e28743;
-    font-size: 20px;
+    margin-bottom:80px;
+ 
   }
 
-  .div_baner {
+
+  .divMenu{
     display: flex;
-    flex-direction: column;
-    background-image: url('https://CaioSerralheria.github.io/Caio.serralheria/Img/Baner.png');
-    height: 750px;
+    background-color:rgb(0, 0, 0);
     width: 100%;
+    justify-content: center;    
+    margin-top: auto;
+    border-bottom: #e28743;
+  
+  }
+  
+  .pMenu {
+    margin-top: auto;
+    color: white;
+    font-size: 22px;
+    margin-right: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:4px 4px 6px #e28743;
+
+
+  }
+
+  a:hover{
+    opacity: 0.6;
+    animation: pulse;
+    animation-duration: 2s;
+}
+  
+
+
+  .boxBaner{
+    display: flex;
+    width: 100%;
+    background-color:black;
+
+  }
+
+  .boxSobre{
+    display: none;
+  }
+
+ 
+  .div_baner {
+    background-image: url('https://CaioSerralheria.github.io/Caio.serralheria/Img/Baner.png');
+    height: 650px;
+    width: 550px;
     background-size: cover;
     background-repeat: no-repeat;
     animation: backInLeft;
@@ -56,10 +103,19 @@
   }
 
   .div_txt_baner {
+    height: 650px;
+    width: 100%;
     margin-left: 16px;
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
+  }
+
+  .boxSobre2{
+    height: 750px;
+    width: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
   .txt_baner {
@@ -87,23 +143,39 @@
     opacity: 0.1;
   }
 
-  .txt_titulo {
+
+  .txt_titulo2 {
     color: #e28743;
-    font-size: 22px;
-    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: auto;
     margin-left: 16px;
     animation: backInLeft;
     animation-duration: 1s;
+    margin-top: 30px;
+    
   }
-
+  .txt_titulo {
+    color: #e28743;
+    font-size: 30px;
+    margin-bottom: auto;
+    margin-left: 32px;
+    animation: backInLeft;
+    animation-duration: 1s;
+    margin-top: 10px;
+  }
+  .txt_tituloContatos {
+    
+    margin-top: 120px;
+  }
 
   .txt_servico {
     color: dimgray;
-    font-size: 20px;
+    font-size: 35px;
     margin-top: 20px;
-    margin-left: 16px;
+    margin-left: 32px;
     animation: backInLeft;
     animation-duration: 1s;
+
   }
 
   .box{
@@ -112,11 +184,11 @@
 
   .txt_quem_somos {
     margin-top: 16px;
-    font-size: 20px;
+    font-size: 22px;
   
     animation: backInLeft;
     animation-duration: 1s;
-    color: dimgray;
+    color: rgb(179, 167, 167);
     text-align:justify;
     text-indent: 5px;
 
@@ -125,37 +197,51 @@
   .div_servico {
     width: 0%;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+
   }
 
+  .box_fotos{
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+  }
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  
   .img_servico {
     opacity: 0;
     transform: scale(0);
   }
 
   .img_servico2 {
-    width: 93%;
-    height: 93%;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #e28743;
+    width: 400px;
+    height: 400px;
     margin-top: 10px;
     border-radius: 8px;
     opacity: 1;
     transform: scale(1);
-    animation: backInLeft;
+    animation: backInRight;
     animation-duration: 1s;
-    
+    box-shadow:2px 2px 12px 2px #707070;
+    margin-left: 20px;
+  
   }
 
 
   a {
     text-decoration: none;
+    scroll-behavior: smooth;
   }
 
   .icom {
-    width: 35px;
-    right: 35px;
+    width: 40px;
+    right: 40px;
     border-radius: 50px;
     margin-top: auto;
   }
@@ -163,15 +249,17 @@
   .picom {
     color: dimgray;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 25px;
     margin-left: 8px;
   }
+
   .picom1 {
     color:#e28743;
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 20px;
     margin-left: 8px;
   }
+
   .contato1{
     display: flex;
     flex-direction: row;
@@ -184,6 +272,12 @@
     margin-left: 8px;
     animation: tada;
     animation-duration: 3s;
+  }
+
+  .icom:hover{
+    animation: tada;
+    animation-duration: 3s;
+
   }
 
 
@@ -199,7 +293,7 @@
     display: flex;
     flex-direction: row;
     border-radius: 8px;
-    margin-left: 16px;
+    margin-left: 32px;
     margin-top: 20px;
 
   }
@@ -212,12 +306,14 @@
     transform: scale(1);
     animation: tada;
     animation-duration: 1s;
+    margin-left: 32px;
+
   }
 
   .txt_endereco{
-    margin-top: 12px;
-    font-size: 15px;
-    margin-left: 18px;
+    margin-top: 20px;
+    font-size: 22px;
+    margin-left: 38px;
     color: dimgray;
   }
 
@@ -228,10 +324,20 @@
     margin-right: auto;
     margin-top: 24px;
     margin-bottom: 20px;
+    font-size: 22px;
+
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
+
+  .divMenu{
+    display: none;
+  }
+
+  .boxSobre2{
+    display: none;
+  }
 
   .cabecalho {
     display: flex;
@@ -352,8 +458,8 @@
   }
 
   .img_servico2 {
-    width: 93%;
-    height: 93%;
+    width: 410px;
+    height: 410px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
