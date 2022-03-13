@@ -14,11 +14,11 @@ var  vidro = document.getElementById('btn_vidros')
 
 
 function scrooll(){
-  console.log("scrool")
+	
 
   document.querySelectorAll("img").forEach((img,index)=>{
   	
-  	var tamanho_lista = document.querySelectorAll("img").length - 1
+  	var tamanho_lista = document.querySelectorAll("img").length - 3
   	
     //const div = document.getElementById("faceboo")
     
@@ -60,7 +60,46 @@ function cria_img(lista, pasta, div) {
 		})
 		botao_servicos(div)
 		
+
   }
+
+
+var tela = document.getElementsByTagName('body')[0].clientWidth
+	console.log("scroolllll", tela)
+if (tela > 700) {
+	cria_img(13, "Portao", "div_portao")
+	cria_img(10, "Portas", "div_porta")
+	cria_img(9, "Janelas", "div_janela")
+	cria_img(14, "Corrimao", "div_corrimao")
+	cria_img(15, "Vidros", "div_vidros")
+
+	
+} else {
+		
+	portao.addEventListener("click", ()=>{
+		cria_img(13, "Portao", "div_portao")
+	});
+
+	porta.addEventListener("click",  ()=>{
+		cria_img(10, "Portas", "div_porta")
+	});
+
+
+	janela.addEventListener("click",  ()=>{
+		cria_img(9, "Janelas", "div_janela")
+	});
+
+
+	corrimao.addEventListener("click",  ()=>{
+		cria_img(14, "Corrimao", "div_corrimao")
+	});
+
+
+	vidro.addEventListener("click",  ()=>{
+		cria_img(15, "Vidros", "div_vidros")
+	});
+	
+}
 
 
 function botao_servicos(div) {
@@ -68,31 +107,6 @@ function botao_servicos(div) {
 	document.getElementById(div).style.width="100%"
 	scrooll()
 }
-
-
-portao.addEventListener("click", ()=>{
-	cria_img(13, "Portao", "div_portao")
-});
-
-porta.addEventListener("click",  ()=>{
-	cria_img(10, "Portas", "div_porta")
-});
-
-
-janela.addEventListener("click",  ()=>{
-	cria_img(9, "Janelas", "div_janela")
-});
-
-
-corrimao.addEventListener("click",  ()=>{
-	cria_img(14, "Corrimao", "div_corrimao")
-});
-
-
-vidro.addEventListener("click",  ()=>{
-	cria_img(15, "Vidros", "div_vidros")
-});
-
 
 
 document.addEventListener("scroll", scrooll)
