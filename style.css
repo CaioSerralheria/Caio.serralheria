@@ -62,7 +62,7 @@
   .pMenu {
     margin-top: auto;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     margin-right: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow:4px 4px 6px #e28743;
@@ -120,13 +120,13 @@
 
   .txt_baner {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 22px;
   }
 
   .p_baner {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 1rem;
   }
 
@@ -146,7 +146,7 @@
 
   .txt_titulo2 {
     color: #e28743;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: auto;
     margin-left: 16px;
     animation: backInLeft;
@@ -170,7 +170,7 @@
 
   .txt_servico {
     color: dimgray;
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 20px;
     margin-left: 32px;
     animation: backInLeft;
@@ -249,7 +249,7 @@
   .picom {
     color: dimgray;
     margin-top: 20px;
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 8px;
   }
 
